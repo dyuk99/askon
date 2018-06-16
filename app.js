@@ -8,6 +8,8 @@ mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/askon_db')
 let app = express();
 
+app.set('view engine', 'ejs');
+app.use(express.static('public'));
 app.use(bodyParser())
 app.use(express.json({limit: '50mb'}));
 app.use(express.urlencoded({limit: '50mb'}));
@@ -18,7 +20,7 @@ const PORT = process.env.PORT || 8090;
 app.get('/',
     async (req,res) => {
         try {
-            res.send("Hi, it's API");
+            res.sendFile('index.html');
         } catch (e) {
             res.send('API error');
         }

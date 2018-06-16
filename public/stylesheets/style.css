@@ -1,0 +1,119 @@
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    list-style-type: none;
+    display: inline-block; }
+
+.fa {
+  font-size: 29px !important;
+  margin-top: -3px;
+  cursor: pointer;
+  color: Gray; }
+  .fa:hover {
+    color: orange; }
+
+/*bootstrap tabs*/
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  background-color: #F5F5F5;
+  border-color: #ddd #ddd transparent; }
+
+/*submit buttons*/
+.singleNewsForm button, .createForm button {
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: orange;
+  border: 0;
+  transition: all 0.8s; }
+  .singleNewsForm button:hover, .singleNewsForm button:active, .createForm button:hover, .createForm button:active {
+    box-shadow: none !important;
+    background-color: Gray !important;
+    outline: none !important; }
+
+body {
+  background-color: whitesmoke;
+  padding-bottom: 50px;
+  font-size: 1rem;
+  font-family: 'Roboto Condensed', sans-serif; }
+  body .mainContainer {
+    padding-top: 20px; }
+    body .mainContainer .nav-tabs {
+      margin-bottom: 5px;
+      border: none !important; }
+      body .mainContainer .nav-tabs .nav-item {
+        color: Gray;
+        border-color: orange;
+        background-color: white;
+        border-radius: 10px 10px 0 0;
+        margin-right: 5px; }
+        body .mainContainer .nav-tabs .nav-item:hover {
+          color: orange; }
+        body .mainContainer .nav-tabs .nav-item.active {
+          color: white;
+          background-color: orange; }
+    body .mainContainer .col-md-12.withHeader {
+      margin-bottom: 25px !important; }
+      body .mainContainer .col-md-12.withHeader .header .navigation ul li {
+        display: inline-block; }
+        body .mainContainer .col-md-12.withHeader .header .navigation ul li a {
+          color: Gray; }
+          body .mainContainer .col-md-12.withHeader .header .navigation ul li a.active, body .mainContainer .col-md-12.withHeader .header .navigation ul li a:hover {
+            color: orange; }
+    body .mainContainer .col-md-12 .singleNews {
+      background-color: white;
+      border: 2px solid lightgrey;
+      height: 40px;
+      margin-bottom: 10px; }
+      body .mainContainer .col-md-12 .singleNews ul li {
+        margin-left: 10px;
+        margin-top: -2px;
+        line-height: 40px;
+        border-radius: 20px; }
+        body .mainContainer .col-md-12 .singleNews ul li.orange {
+          background-color: orange;
+          border-radius: 5px;
+          width: 40px;
+          text-align: center; }
+      body .mainContainer .col-md-12 .singleNews .newsButtons {
+        margin-top: 7px; }
+        body .mainContainer .col-md-12 .singleNews .newsButtons .fa-window-close {
+          margin-left: -35px; }
+        body .mainContainer .col-md-12 .singleNews .newsButtons .fa-pencil-square {
+          margin-left: -65px; }
+        body .mainContainer .col-md-12 .singleNews .newsButtons .date {
+          position: absolute;
+          margin-left: -125px;
+          color: grey;
+          font-size: 14px; }
+    body .mainContainer .btn-group {
+      height: 40px; }
+      body .mainContainer .btn-group .btn-prev {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: white;
+        border: 2px solid orange;
+        border-radius: 20px 0 0 20px;
+        color: orange;
+        outline: none; }
+        body .mainContainer .btn-group .btn-prev:hover {
+          background-color: orange;
+          color: white; }
+      body .mainContainer .btn-group .btn-number {
+        border-top: 2px solid orange;
+        border-left: none !important;
+        border-right: none !important;
+        border-bottom: 2px solid orange;
+        color: black;
+        font-weight: bold;
+        background-color: white; }
+      body .mainContainer .btn-group .btn-next {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: white;
+        border: 2px solid orange;
+        color: orange;
+        outline: none;
+        border-radius: 0 20px 20px 0; }
+        body .mainContainer .btn-group .btn-next:hover {
+          background-color: orange;
+          color: white; }
